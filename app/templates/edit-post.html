@@ -14,7 +14,7 @@
     <div>
       {{post.vote_count}} {{post.vote_count|format_plural('point')}} by you on {{post.created_at|format_date}}
       |
-      <a href="/post/{{post.id}}">{{post.comments|length}} {{post.comments|length|format_date('comment')}}</a>
+      <a href="/post/{{post.id}}">{{post.comments|length}} {{post.comments|length|format_plural('comment')}}</a>
     </div>
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
